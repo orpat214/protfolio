@@ -635,10 +635,12 @@ body {
         width: calc(50% - 13px);
     }
 .project img {
-    width: 60%;
+    width: 85%;
     height: 240px;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
 }
 
 
@@ -824,10 +826,12 @@ body {
     }
 
 .project img {
-    width: 60%;
+    width: 85%;
     height: 240px;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
 }
     /* Services */
     .service-box {
@@ -1004,10 +1008,12 @@ body {
     }
 
 .project img {
-    width: 60%;
+    width: 85%;
     height: 240px;
-    object-fit: cover;
-    object-position: center top;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin: auto;
 }
 
     /* Services */

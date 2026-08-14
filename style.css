@@ -500,9 +500,206 @@ footer p {
     grid-template-columns: 1fr;
     margin-left:100px ;
 }
- /* =========================
-   FINAL RESPONSIVE CSS
-========================= */
+/* =========================================================
+   RESPONSIVE CSS
+   Desktop/Laptop = Your Original CSS
+   Tablet         = 769px - 1024px
+   Mobile         = 481px - 768px
+   Small Phone    = 320px - 480px
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL RESPONSIVE FIX
+========================================================= */
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+   769px - 1024px
+========================================================= */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    /* Header */
+    header {
+        padding: 18px 35px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+
+    /* Hero */
+    .hero {
+        padding: 120px 40px 70px;
+        gap: 40px;
+    }
+
+    .left {
+        width: 55%;
+    }
+
+    .right {
+        width: 45%;
+    }
+
+    .left h1 {
+        font-size: 42px;
+    }
+
+    .right img {
+        width: 300px;
+        height: 320px;
+        object-fit: cover;
+    }
+
+
+    /* Biodata */
+    #biodata {
+        padding: 80px 40px;
+    }
+
+    .bio-box {
+        gap: 35px;
+    }
+
+    .bio-left,
+    .bio-right {
+        width: 50%;
+    }
+
+    .bio-left img {
+        width: 100%;
+        max-width: 380px;
+    }
+
+    .bio-right {
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+
+    /* Education */
+    #education {
+        padding: 80px 40px;
+    }
+
+
+    /* Skills */
+    #skills {
+        padding: 80px 40px;
+    }
+
+
+    /* Gallery */
+    #gallery,
+    #projects,
+    #certificate,
+    #services,
+    #contact {
+        padding: 80px 40px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+
+    /* Projects */
+    .project-box {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .project {
+        width: calc(50% - 13px);
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+
+    /* Services */
+    .service-box {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .service {
+        width: calc(50% - 13px);
+    }
+
+
+    /* Contact */
+    .contact-box {
+        gap: 35px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    /* Payment */
+    .payment {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .payment p,
+    .payment h3 {
+        margin-left: 0;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 60px 40px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   481px - 768px
+========================================================= */
 
 @media (max-width: 768px) {
 
@@ -517,12 +714,16 @@ footer p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         gap: 12px;
+        width: 100%;
     }
 
     nav a {
         font-size: 14px;
+        white-space: nowrap;
     }
+
 
     /* Hero */
     .hero {
@@ -532,24 +733,24 @@ footer p {
         gap: 40px;
     }
 
-    .left {
+    .left,
+    .right {
         width: 100%;
     }
 
     .left h1 {
         font-size: 38px;
+        line-height: 1.2;
         margin: 10px 0;
-    }
-
-    .right {
-        width: 100%;
     }
 
     .right img {
         width: 280px;
         height: 300px;
+        max-width: 90%;
         object-fit: cover;
     }
+
 
     /* Biodata */
     #biodata {
@@ -566,6 +767,10 @@ footer p {
         width: 100%;
     }
 
+    .bio-left {
+        text-align: center;
+    }
+
     .bio-left img {
         width: 100%;
         max-width: 400px;
@@ -576,15 +781,18 @@ footer p {
         line-height: 30px;
     }
 
+
     /* Education */
     #education {
         padding: 70px 20px;
     }
 
+
     /* Skills */
     #skills {
         padding: 70px 20px;
     }
+
 
     /* Gallery */
     #gallery,
@@ -601,8 +809,11 @@ footer p {
     }
 
     .gallery img {
+        width: 100%;
         height: auto;
+        display: block;
     }
+
 
     /* Projects */
     .project-box {
@@ -617,8 +828,10 @@ footer p {
     .project img {
         width: 100%;
         height: auto;
-        max-height: 250px;
+        max-height: 300px;
+        object-fit: cover;
     }
+
 
     /* Services */
     .service-box {
@@ -629,6 +842,7 @@ footer p {
     .service {
         width: 100%;
     }
+
 
     /* Contact */
     .contact-box {
@@ -648,14 +862,20 @@ footer p {
         line-height: 32px;
     }
 
+    .contact-form {
+        margin-top: 0;
+    }
+
     .contact-form input,
     .contact-form textarea {
         width: 100%;
+        max-width: 100%;
     }
+
 
     /* Payment */
     .payment {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
     }
 
@@ -664,6 +884,7 @@ footer p {
         margin-left: 0;
     }
 
+
     /* Footer */
     footer {
         padding: 50px 20px;
@@ -671,14 +892,22 @@ footer p {
 }
 
 
-/* =========================
+/* =========================================================
    SMALL PHONE
-========================= */
+   320px - 480px
+========================================================= */
 
 @media (max-width: 480px) {
 
+    /* Header */
     header {
         padding: 12px 10px;
+        gap: 10px;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
     }
 
     .logo img {
@@ -690,25 +919,53 @@ footer p {
         font-size: 20px;
     }
 
+
+    /* Navigation */
     nav {
-        gap: 8px;
+        gap: 7px;
+        padding: 0 5px;
     }
 
     nav a {
         font-size: 12px;
     }
 
+
+    /* Hero */
     .hero {
         padding: 110px 15px 50px;
+        gap: 30px;
     }
 
     .left h1 {
         font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .left p {
+        font-size: 14px;
+        line-height: 24px;
     }
 
     .right img {
         width: 220px;
         height: 240px;
+        max-width: 85%;
+    }
+
+
+    /* Biodata */
+    #biodata {
+        padding: 60px 15px;
+    }
+
+    .bio-box {
+        gap: 25px;
+    }
+
+    .bio-left img {
+        width: 100%;
+        max-width: 300px;
     }
 
     .bio-right {
@@ -716,6 +973,10 @@ footer p {
         line-height: 26px;
     }
 
+
+    /* Sections */
+    #education,
+    #skills,
     #gallery,
     #projects,
     #certificate,
@@ -724,17 +985,143 @@ footer p {
         padding: 60px 15px;
     }
 
-    .payment {
+
+    /* Gallery */
+    .gallery {
         grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Projects */
+    .project-box {
+        gap: 15px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+        max-height: 240px;
+    }
+
+
+    /* Services */
+    .service-box {
+        gap: 15px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+
+    /* Contact */
+    .contact-box {
+        gap: 25px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .contact-info {
-        margin-left: 0;
+        font-size: 14px;
+        line-height: 28px;
     }
 
     .contact-form {
-        margin-right: 0;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+
+    /* Payment */
+    .payment {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .payment p,
+    .payment h3 {
+        margin-left: 0;
+    }
+
+
+    /* Footer */
+    footer {
+        padding: 45px 15px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONE
+   319px or less
+========================================================= */
+
+@media (max-width: 319px) {
+
+    header {
+        padding: 10px 8px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 100px 10px 40px;
+    }
+
+    .left h1 {
+        font-size: 26px;
+    }
+
+    .right img {
+        width: 190px;
+        height: 210px;
+    }
+
+    #biodata,
+    #education,
+    #skills,
+    #gallery,
+    #projects,
+    #certificate,
+    #services,
+    #contact {
+        padding: 50px 10px;
+    }
+
+    .bio-right {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .contact-info {
+        font-size: 13px;
+        line-height: 25px;
+    }
 }

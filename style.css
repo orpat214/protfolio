@@ -345,6 +345,7 @@ nav a:hover {
 }
 
 .contact-form {
+     padding-top: 80px;
     flex: 1;
 }
 
@@ -463,9 +464,10 @@ footer p {
 
 
 .right img {
-    width: 700px;
-    height: 750px;
+    width: 550px;
+    height: 630px;
     border-radius: 20%;
+     gap: 20px;
 }
 
 .payment p {
@@ -520,12 +522,9 @@ html {
 
 body {
     width: 100%;
-    overflow-x: hidden;
+
 }
 
-img {
-    max-width: 100%;
-}
 
 
 /* =========================================================
@@ -637,7 +636,7 @@ img {
     }
 
     .project img {
-        width: 100%;
+        width: 60%;
         height: auto;
         max-height: 280px;
         object-fit: cover;
@@ -1119,6 +1118,14 @@ img {
         font-size: 13px;
         line-height: 24px;
     }
+
+    .contact-info {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+
 
     .contact-info {
         font-size: 13px;

@@ -500,81 +500,241 @@ footer p {
     grid-template-columns: 1fr;
     margin-left:100px ;
 }
-/* =========================
-   RESPONSIVE DESIGN
+ /* =========================
+   FINAL RESPONSIVE CSS
 ========================= */
 
-* {
-    box-sizing: border-box;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-body {
-    margin: 0;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-
-}
-
-/* Mobile */
 @media (max-width: 768px) {
 
-    .container {
-        width: 92%;
-        margin: auto;
-    }
-
-    .row {
+    /* Header */
+    header {
+        padding: 15px 20px;
         flex-direction: column;
+        gap: 15px;
     }
 
-    .navbar {
-        flex-direction: column;
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
 
-    input,
-    textarea,
-    button {
-        max-width: 100%;
-    }
-
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-
-    body {
+    nav a {
         font-size: 14px;
     }
 
-    h1 {
-        font-size: 28px;
+    /* Hero */
+    .hero {
+        flex-direction: column;
+        padding: 120px 20px 60px;
+        text-align: center;
+        gap: 40px;
     }
 
-    h2 {
-        font-size: 24px;
+    .left {
+        width: 100%;
     }
 
-    .container {
-        width: 94%;
+    .left h1 {
+        font-size: 38px;
+        margin: 10px 0;
     }
 
+    .right {
+        width: 100%;
+    }
+
+    .right img {
+        width: 280px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    /* Biodata */
+    #biodata {
+        padding: 70px 20px;
+    }
+
+    .bio-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .bio-left,
+    .bio-right {
+        width: 100%;
+    }
+
+    .bio-left img {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .bio-right {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    /* Education */
+    #education {
+        padding: 70px 20px;
+    }
+
+    /* Skills */
+    #skills {
+        padding: 70px 20px;
+    }
+
+    /* Gallery */
+    #gallery,
+    #projects,
+    #certificate,
+    #services,
+    #contact {
+        padding: 70px 20px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .gallery img {
+        height: auto;
+    }
+
+    /* Projects */
+    .project-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    /* Services */
+    .service-box {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service {
+        width: 100%;
+    }
+
+    /* Contact */
+    .contact-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .contact-info {
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    /* Payment */
+    .payment {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .payment p,
+    .payment h3 {
+        margin-left: 0;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 20px;
+    }
 }
 
-/* Small Mobile */
+
+/* =========================
+   SMALL PHONE
+========================= */
+
 @media (max-width: 480px) {
-    
+
+    header {
+        padding: 12px 10px;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 8px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 110px 15px 50px;
+    }
+
+    .left h1 {
+        font-size: 30px;
+    }
+
+    .right img {
+        width: 220px;
+        height: 240px;
+    }
+
+    .bio-right {
+        font-size: 14px;
+        line-height: 26px;
+    }
+
+    #gallery,
+    #projects,
+    #certificate,
+    #services,
+    #contact {
+        padding: 60px 15px;
+    }
+
+    .payment {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        margin-left: 0;
+    }
+
+    .contact-form {
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
 }

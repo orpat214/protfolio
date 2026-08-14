@@ -694,6 +694,10 @@ body {
     .payment h3 {
         margin-left: 0;
     }
+     .payment h3 {
+    margin-left: 75px;
+    margin-top: 1px;
+}
 
 
     /* Footer */
@@ -896,6 +900,10 @@ body {
     .payment h3 {
         margin-left: 0;
     }
+    .payment h3 {
+    margin-left: 75px;
+    margin-top: 1px;
+}
 
 
     /* Footer */

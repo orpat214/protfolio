@@ -1019,6 +1019,9 @@ body {
     .project {
         width: 100%;
     }
+    .project {
+    padding: 5px;
+}
 
     .project img {
         width: 90%;

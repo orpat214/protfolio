@@ -276,19 +276,24 @@
 
             <div class="contact-form">
 
-                <form>
+               <form action="https://formsubmit.co/orpat214@gmail.com" method="POST">
 
-                    <input type="text" placeholder="Name">
+    <input type="text" name="name" placeholder="Name" required>
 
-                    <input type="email" placeholder="Email">
+    <input type="email" name="email" placeholder="Email" required>
+     <input type="number" name="email" placeholder="number" required>
 
-                    <input type="text" placeholder="Subject">
+    <input type="text" name="subject" placeholder="Subject" required>
 
-                    <textarea rows="6" placeholder="Write Your Message"></textarea>
+    <textarea name="message" placeholder="Write Your Message" required></textarea>
 
-                    <button type="submit">Send Message</button>
+    <input type="hidden" name="_captcha" value="false">
 
-                </form>
+    <input type="hidden" name="_subject" value="New Message From My Portfolio">
+
+    <button type="submit">Send Message</button>
+
+</form>
 
             </div>
 
@@ -298,7 +303,7 @@
 
     <!-- Footer -->
 
-      <footer>
+    <footer>
 
         <h2>My Portfolio</h2>
 

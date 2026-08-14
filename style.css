@@ -692,9 +692,9 @@ body {
 
     .payment p,
     
-     .payment h3 {
- 
-}
+  .payment h3 {
+        margin-left:5px;
+    }
 
     /* Footer */
     footer {
@@ -894,9 +894,9 @@ body {
 
     .payment p,
    
-    .payment h3 {
- 
-}
+  .payment h3 {
+        margin-left: 5px;
+    }
 
 
     /* Footer */

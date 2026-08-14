@@ -691,9 +691,7 @@ body {
     }
 
     .payment p,
-    .payment h3 {
-        margin-left: 0;
-    }
+    
      .payment h3 {
     margin-left: 75px;
     margin-top: 1px;
@@ -897,9 +895,7 @@ body {
     }
 
     .payment p,
-    .payment h3 {
-        margin-left: 0;
-    }
+   
     .payment h3 {
     margin-left: 75px;
     margin-top: 1px;

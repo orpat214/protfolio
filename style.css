@@ -634,13 +634,11 @@ body {
     .project {
         width: calc(50% - 13px);
     }
-
 .project img {
     width: 60%;
     height: 240px;
-    object-fit: contain;
-    object-position: center center;
-    display: block;
+    object-fit: cover;
+    object-position: center top;
 }
 
 
@@ -828,11 +826,9 @@ body {
 .project img {
     width: 60%;
     height: 240px;
-    object-fit: contain;
-    object-position: center center;
-    display: block;
+    object-fit: cover;
+    object-position: center top;
 }
-
     /* Services */
     .service-box {
         flex-direction: column;
@@ -1007,11 +1003,11 @@ body {
         width: 100%;
     }
 
- .project img {
+.project img {
     width: 60%;
     height: 240px;
-    object-fit: contain;
-    object-position: center;
+    object-fit: cover;
+    object-position: center top;
 }
 
     /* Services */

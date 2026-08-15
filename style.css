@@ -863,7 +863,7 @@ body {
     }
 
     .contact-info {
-        font-size: 16px;
+        font-size: 14px;
         line-height: 32px;
     }
 
@@ -1042,8 +1042,8 @@ body {
     }
 
     .contact-info {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 13px;
+        line-height:32px;
     }
 
     .contact-form {
@@ -1221,8 +1221,8 @@ body {
     }
 
     .contact-info {
-        font-size: 14px;
-        line-height: 28px;
+        font-size: 12px;
+        line-height: 35px;
     }
 
     .contact-form {
@@ -1254,3 +1254,4 @@ body {
         padding: 45px 15px;
     }   
  }
+

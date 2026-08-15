@@ -341,7 +341,7 @@ nav a:hover {
 
 .contact-info {
     flex: 1;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 45px;
 }
 
@@ -481,7 +481,7 @@ footer p {
 }
 
 .payment h3 {
-    margin-left: 90px;
+    margin-left: 75px;
     margin-top: 1px;
 }
 
@@ -671,7 +671,7 @@ body {
     }
 
     .contact-info {
-        font-size: 12px;
+        font-size: 16px;
         line-height: 30px;
     }
 
@@ -1254,4 +1254,3 @@ body {
         padding: 45px 15px;
     }   
  }
-

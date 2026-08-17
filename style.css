@@ -1,4 +1,4 @@
-* {
+ * {
     
     margin: 0;
     padding: 0;
@@ -177,7 +177,7 @@ nav a:hover {
 
 .card {
 
-    background: #1e293b;
+    background: #444547;
 
     padding: 30px;
 
@@ -199,7 +199,7 @@ nav a:hover {
     width: 4px;
     height: 100%;
 
-    background: #38bdf8;
+    
 }
 
 .card:hover {
@@ -207,6 +207,7 @@ nav a:hover {
     transform: translateY(-10px);
 
     box-shadow: 0 0 20px cyan;
+    background-color: #00050ad2;
 
 }
 
@@ -386,6 +387,7 @@ nav a:hover {
     border-radius: 10px;
     outline: none;
     font-size: 16px;
+    color: #f8fafc;
    background-color: rgb(0, 0, 0);
 }
 

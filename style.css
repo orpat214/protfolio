@@ -542,6 +542,11 @@ footer p {
     grid-template-columns: 1fr;
     margin-left:100px ;
 }
+.sdg{
+    line-height: 36px;
+    gap: 40px;
+}
+
 /* =========================================================
    RESPONSIVE CSS
    Desktop/Laptop = Your Original CSS

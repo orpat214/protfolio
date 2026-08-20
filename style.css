@@ -890,8 +890,9 @@ body {
 
     /* Services */
     .service-box {
-        grid -direction: column;
+    flex-direction: column;
         gap: 20px;
+    }
     }
 
     .service {

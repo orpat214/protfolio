@@ -703,7 +703,7 @@ body {
     }
 
     .service {
-        width: calc(67% - 35px);
+        width: calc(100% - 35px);
     }
 
 
